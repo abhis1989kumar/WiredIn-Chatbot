@@ -1,5 +1,6 @@
+deploy\SpeakingChatbot$1.class
+deploy\sendmail.class
+connectToDB.class
+deploy\sendmail$1.class
 Chatbot.class
-sendmail$1.class
-SpeakingChatbot.class
-sendmail.class
-SpeakingChatbot$1.class
+deploy\SpeakingChatbot.class

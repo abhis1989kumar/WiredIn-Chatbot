@@ -1,0 +1,105 @@
+/*	else if(str.toLowerCase().matches("(.*)cyr3con(.*)".toLowerCase()))
+	{
+		//chatbotOutput("employeelist", "I have the employee contact list.Go ahead and type the name you are looking to connect..");
+		Charset utf8 = StandardCharsets.UTF_8;
+		String response="Cyr3con is a Team of skilled members trying to predict any cyber attacks!";
+		 List<String> lines= Arrays.asList("'", "set speech = Wscript.CreateObject(\"SAPI.spVoice\") ","speech.speak "+ "\""+response+"\"");
+  	   String fileLocation=pathName2+"1.vbs";
+  	   try {
+			Files.write(Paths.get(fileLocation), lines, utf8);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+  	   
+  	  
+  		   try {
+				Desktop.getDesktop().open(new File(fileLocation));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			
+  	  
+	}
+  		 ChatHistory.setText(ChatHistory.getText()+"\n"+ "  WiredIn " + " : "+ response);}*/
+	
+	else if(str.toLowerCase().matches("(.*)language(.*)".toLowerCase()))
+	{
+
+		chatbotOutput("language",adjustMessage("We currently cover sixteen languages including English, Russian, Mandarin, Vietnamese, Bahasa, Arabic, Farsi, Turkish, Romanian, Spanish, French, Italian, Swedish, German, Portuguese, Japanese and are expanding."));   
+
+	}    
+	else if(str.toLowerCase().matches("(.*)network(.*)".toLowerCase()))
+	{
+		chatbotOutput("networks", "Networks used are Surface web (Clearnet), Tor, Freenet, i2p.");
+	}  
+
+	else if(str.toLowerCase().matches("(.*)darkweb(.*)".toLowerCase()))
+	{
+		chatbotOutput("darkwebs", adjustMessage("Dark web consists of Sites hosted on cryptonetworks which are accessible only through additional protocols. Not all so-called darkweb-content is bad, in fact most 'darknetizens' are privacy conscious geeks."));     
+	} 
+	else if(str.toLowerCase().matches("(.*)vulnerab(.*)priorit(.*)".toLowerCase()))
+	{
+		chatbotOutput("vulnprior", adjustMessage("There were over 15,000 software vulnerabilities in 2017 - more than doubling from the previous year.Patching at the enterprise level is difficult due to the large number of interconnected systems.The testing and deployment of patches necessitate a prioritization mechanism."));
+	}       
+
+	else if(str.toLowerCase().matches("(.*)CVSS(.*)".toLowerCase()))
+	{
+		chatbotOutput("CVSS", adjustMessage("Multiple scientific studies have shown that CVSS scores do no better than random guessing when determining which vulnerabilites will be exploited by malicious hackers. For example, when the EternalBlue vulnerability - enabling the largest ransomware attack (WannaCry) to date - was released, there were 60 other vulnerabilities released the same week rated at a higher severity"));        
+	}  
+	else if(str.toLowerCase().matches("(.*)social media(.*)priorit(.*)".toLowerCase()))
+	{
+		chatbotOutput("socialmedia",adjustMessage("A 2017 study by MIT Lincoln Labs showed that social media indicators alone are not predictive of which vulnerabilities will be exploited by malicious hackers." + 
+				"This is likely because of the Echo Chamber effect caused by social media."));  
+	}  
+	else if(str.toLowerCase().matches("(.*)CYR3CON(.*)social(.*)".toLowerCase()))
+	{
+		chatbotOutput("CYR3CONsocial", adjustMessage("CYR3CON(TM) collects Social Media in a very careful way - only collecting social media chatter related to certain hacker communities of interest."));
+	}  
+	else if(str.toLowerCase().matches("(.*)histor(.*)ata(.*)".toLowerCase()))
+	{
+		chatbotOutput("historical", adjustMessage("CYR3CON(TM) has been strategically collecting data since 2015 and historical data goes back much further."));       
+	}  
+	else if(str.toLowerCase().matches("(.*)CYR3CON(.*)tart(.*)".toLowerCase()))
+	{
+		chatbotOutput("CYR3CONstart", adjustMessage("CYR3CON(TM) has commericialized a U.S. government funded project out of Arizona State University designed to create the next generation of predictive solutions for cybersecurity."));
+	}  
+	else if(str.toLowerCase().matches("(.*)CYR3CON(.*)CSO(.*)".toLowerCase()))
+	{
+		chatbotOutput("CYR3CONCSO", adjustMessage("CYR3CON(TM) has designed tools and assessments meant to help prioitize and triage - hence increasing efficiency." + 
+				"Using machine learning and threat actor information, CYR3CON(TM) allows CSO's and SOC's to focus on the most important vulnerabilities - not just flood the CSO with more information.")); 
+	}  
+	else if(str.toLowerCase().matches("(.*)CVSS(.*)ersion(.*)".toLowerCase()))
+	{
+		chatbotOutput("CVSSVersion", adjustMessage("Multiple scientific studies have shown that both CVSS version 2 and version 3 perform no better than random guess in predicting what vulnerabilities malicious hackers will use."));
+	}  
+	else if(str.toLowerCase().matches("(.*)Metasploit(.*)".toLowerCase()))
+	{
+		chatbotOutput("Metasploit", adjustMessage("While the knowledge of Metasploit modules indicates exploitability, this often occurs late in the lifecycle of a vulnerability. Data from hacker communities CYR3CON(TM) examines typically predate the use of Metasploit modules. It is noteworthy that CYR3CON(TM) considers Metasploit information in its CyRating(TM) score."));
+
+	}  
+	else if(str.toLowerCase().matches("(.*)xploitDB(.*)".toLowerCase()))
+	{
+		chatbotOutput("ExploitDB",adjustMessage("ExploitDB shows the existence of 'proof of concept' exploits, however this does not show malicious hackers' intent to deploy nor does it show that a fully weaponized exploit is available. It is noteworthy that CYR3CON(TM) considers ExploitDB information in the CyRating(TM) score."));                                      
+	}  
+	else if(str.toLowerCase().matches("(.*)breach(.*)".toLowerCase()))
+	{
+		chatbotOutput("Databreach", adjustMessage("Verizon has reported that 99% of breaches are due to known vulnrabilities. Other sources also reported high numbers (97% by Strategic Software Survey, 90% by SEI, 76% by NTT, and 70% by HPE). However, less than 5% of all known vulnerabilities are used in malicious cyberattacks. It is therefore necessary to explore the criteria according to which malHats choose to exploit one vulnerability over another. At CYR3CON(TM) we more than thought about this."));
+	} 
+	else if(str.toLowerCase().matches("(.*)zero(.*)day(.*)exploit(.*)hackers(.*)".toLowerCase()) && str.toLowerCase().matches("(.*)hackers(.*)".toLowerCase()))
+	{
+		chatbotOutput("zerodayhackers", adjustMessage("Finding 0 days is time consuming and therefore a longtime investment. Malicious hackers typically reserve zero day exploits for certain high-end attacks due to this expense. Most often, we see 0 days used by supposed nation state actors most often. It is interesting to note that Kaspersky Lab has reported the recognized use of zero days falling year-on-year for the last three years."));
+	} 
+	else if(str.toLowerCase().matches("(.*)zero(.*)day(.*)exploit(.*)".toLowerCase()))
+	{
+		chatbotOutput("zerodayexploit", adjustMessage("CYR3CON(TM) has a solution where we identify claimed zero day exploits from our sources."));     
+	} 
+	else if(str.toLowerCase().matches("(.*)vulnerab(.*)hackers(.*)".toLowerCase()))
+	{
+		chatbotOutput("vulnHacker",adjustMessage("The numbers vary, but scientific studies have shown it to be from 1.3%-2.4% as fraction of known vulnerabilitites. The trick is finding out which ones!"));
+	} 
+	else if(str.toLowerCase().matches("(.*)hackers(.*)old(.*)".toLowerCase()) || str.toLowerCase().matches("(.*)old(.*)hackers(.*)".toLowerCase()) )
+	{
+		chatbotOutput("oldVuln", adjustMessage("Yes, CYR3CON(TM) often identifies the re-emergence of older vulnerabilities in its sources. For example, discussions of vulnerabiltiies used in (Not)Petya re-emerged weeks before the attack."));
+	} 

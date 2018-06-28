@@ -1,8 +1,8 @@
-0,ASK FAMILIAR CONTACTNAME,*,*,<think><set name="topic">ASKING FAMILIAR CONTACTNAME</set></think>#NewlineWhat is your <lowercase><get name="familiarpredicate"/></lowercase>'s name?,familiar.aiml
-0,_,WHAT IS YOUR * S NAME,ASKING FAMILIAR CONTACTNAME,<think>#Newline<set name="topic">unknown</set>#Newline<set name="contactname"><star/></set>#Newline<set name="contactdest"><star/></set>#Newline<set name="isshortanswer"><srai>ISSHORTANSWER <star/></srai></set>#Newline</think>#Newline<condition name="isshortanswer">#Newline<li value="true">#Newline<srai>REMEMBERFAMILIARNAME</srai>#Newline<srai>RESUMEACTION <get name="modecom"/></srai>#Newline</li>#Newline<li><srai>CONTACTFINALIZE</srai> <srai><star/></srai></li>#Newline</condition>,familiar.aiml
-0,MY <SET>FAMILIARNAME</SET> S NAME IS *,*,*,<think>#Newline<set name="familiarpredicate"><srai>FAMILIARPREDICATE <star/></srai></set>#Newline<set name="contactname"><star index="2"/></set>#Newline</think>#Newline<srai>REMEMBERFAMILIARNAME</srai>,familiar.aiml
-0,MY <SET>FAMILIARNAME</SET> IS <SET>NAME</SET>,*,*,<think>#Newline<set name="familiarpredicate"><srai>FAMILIARPREDICATE <star/></srai></set>#Newline<set name="contactname"><star index="2"/></set>#Newline</think>#Newline<srai>REMEMBERFAMILIARNAME</srai>,familiar.aiml
-0,* IS MY <SET>FAMILIARNAME</SET>,*,*,<srai>MY <star index="2"/> IS <star/></srai>,familiar.aiml
+0,ASK FAMILIAR CONTACTNAME,*,*,"<think><set name=""topic"">ASKING FAMILIAR CONTACTNAME</set></think>#NewlineWhat is your <lowercase><get name=""familiarpredicate""/></lowercase>'s name?",familiar.aiml
+0,_,WHAT IS YOUR * S NAME,ASKING FAMILIAR CONTACTNAME,"<think>#Newline<set name=""topic"">unknown</set>#Newline<set name=""contactname""><star/></set>#Newline<set name=""contactdest""><star/></set>#Newline<set name=""isshortanswer""><srai>ISSHORTANSWER <star/></srai></set>#Newline</think>#Newline<condition name=""isshortanswer"">#Newline<li value=""true"">#Newline<srai>REMEMBERFAMILIARNAME</srai>#Newline<srai>RESUMEACTION <get name=""modecom""/></srai>#Newline</li>#Newline<li><srai>CONTACTFINALIZE</srai> <srai><star/></srai></li>#Newline</condition>",familiar.aiml
+0,MY <SET>FAMILIARNAME</SET> S NAME IS *,*,*,"<think>#Newline<set name=""familiarpredicate""><srai>FAMILIARPREDICATE <star/></srai></set>#Newline<set name=""contactname""><star index=""2""/></set>#Newline</think>#Newline<srai>REMEMBERFAMILIARNAME</srai>",familiar.aiml
+0,MY <SET>FAMILIARNAME</SET> IS <SET>NAME</SET>,*,*,"<think>#Newline<set name=""familiarpredicate""><srai>FAMILIARPREDICATE <star/></srai></set>#Newline<set name=""contactname""><star index=""2""/></set>#Newline</think>#Newline<srai>REMEMBERFAMILIARNAME</srai>",familiar.aiml
+0,* IS MY <SET>FAMILIARNAME</SET>,*,*,"<srai>MY <star index=""2""/> IS <star/></srai>",familiar.aiml
 0,FAMILIARPREDICATE NIECE,*,*,niece,familiar.aiml
 0,FAMILIARPREDICATE MOM,*,*,mother,familiar.aiml
 0,FAMILIARPREDICATE NEPHEW,*,*,nephew,familiar.aiml
@@ -40,44 +40,44 @@
 0,FAMILIARPREDICATE SON,*,*,son,familiar.aiml
 0,FAMILIARPREDICATE GRANDDAD,*,*,grandfather,familiar.aiml
 0,FAMILIARPREDICATE MUMMY,*,*,mother,familiar.aiml
-0,ISAFAMILIARNAME NIECE,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MOM,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME NEPHEW,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GRANDMA,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME DADA,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME WIFE,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME HUSBAND,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME DAUGHTER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GRANDFATHER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME DAD,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MOMMY,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME WIFEY,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME FATHER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME BOYFRIEND,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME UNCLE,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME HUBBY,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MOTHER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MUM,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MA,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MUMMA,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME BROTHER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MOMMA,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GIRLFRIEND,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME SIS,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GRANDMOTHER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GRANDMOM,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME BESTFRIEND,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME *,*,*,false,familiar.aiml
-0,ISAFAMILIARNAME FRIEND,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME AUNT,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME SISTER,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME ANT,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME DADDY,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME BRO,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME SON,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME GRANDDAD,*,*,true,familiar.aiml
-0,ISAFAMILIARNAME MUMMY,*,*,true,familiar.aiml
-0,GETFAMILIARNAME,*,*,<think>#Newline<set name="familiarpredicate"><uppercase><get name="familiarpredicate"/></uppercase></set>#Newline</think>#Newline<condition name="familiarpredicate">#Newline<li value="SON"><get name="son"/></li>#Newline<li value="AUNT"><get name="aunt"/></li>#Newline<li value="WIFE"><get name="wife"/></li>#Newline<li value="UNCLE"><get name="uncle"/></li>#Newline<li value="NIECE"><get name="niece"/></li>#Newline<li value="NEPHEW"><get name="nephew"/></li>#Newline<li value="MOTHER"><get name="mother"/></li>#Newline<li value="FATHER"><get name="father"/></li>#Newline<li value="SISTER"><get name="sister"/></li>#Newline<li value="BROTHER"><get name="brother"/></li>#Newline<li value="HUSBAND"><get name="husband"/></li>#Newline<li value="DAUGHTER"><get name="daughter"/></li>#Newline<li value="GRANDMOTHER"><get name="grandmother"/></li>#Newline<li value="GRANDFATHER"><get name="grandfather"/></li>#Newline<li>who</li>#Newline</condition>,familiar.aiml
+0,ISAFAMILIARNAME NIECE,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MOM,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME NEPHEW,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GRANDMA,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME DADA,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME WIFE,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME HUSBAND,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME DAUGHTER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GRANDFATHER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME DAD,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MOMMY,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME WIFEY,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME FATHER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME BOYFRIEND,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME UNCLE,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME HUBBY,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MOTHER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MUM,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MA,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MUMMA,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME BROTHER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MOMMA,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GIRLFRIEND,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME SIS,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GRANDMOTHER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GRANDMOM,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME BESTFRIEND,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME *,*,*,FALSE,familiar.aiml
+0,ISAFAMILIARNAME FRIEND,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME AUNT,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME SISTER,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME ANT,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME DADDY,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME BRO,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME SON,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME GRANDDAD,*,*,TRUE,familiar.aiml
+0,ISAFAMILIARNAME MUMMY,*,*,TRUE,familiar.aiml
+0,GETFAMILIARNAME,*,*,"<think>#Newline<set name=""familiarpredicate""><uppercase><get name=""familiarpredicate""/></uppercase></set>#Newline</think>#Newline<condition name=""familiarpredicate"">#Newline<li value=""SON""><get name=""son""/></li>#Newline<li value=""AUNT""><get name=""aunt""/></li>#Newline<li value=""WIFE""><get name=""wife""/></li>#Newline<li value=""UNCLE""><get name=""uncle""/></li>#Newline<li value=""NIECE""><get name=""niece""/></li>#Newline<li value=""NEPHEW""><get name=""nephew""/></li>#Newline<li value=""MOTHER""><get name=""mother""/></li>#Newline<li value=""FATHER""><get name=""father""/></li>#Newline<li value=""SISTER""><get name=""sister""/></li>#Newline<li value=""BROTHER""><get name=""brother""/></li>#Newline<li value=""HUSBAND""><get name=""husband""/></li>#Newline<li value=""DAUGHTER""><get name=""daughter""/></li>#Newline<li value=""GRANDMOTHER""><get name=""grandmother""/></li>#Newline<li value=""GRANDFATHER""><get name=""grandfather""/></li>#Newline<li>who</li>#Newline</condition>",familiar.aiml
 0,FAMILIARPRONOUN NIECE,*,*,her,familiar.aiml
 0,FAMILIARPRONOUN MOM,*,*,her,familiar.aiml
 0,FAMILIARPRONOUN NEPHEW,*,*,his,familiar.aiml
@@ -115,4 +115,4 @@
 0,FAMILIARPRONOUN SON,*,*,his,familiar.aiml
 0,FAMILIARPRONOUN GRANDDAD,*,*,his,familiar.aiml
 0,FAMILIARPRONOUN MUMMY,*,*,her,familiar.aiml
-0,REMEMBERFAMILIARNAME,*,*,<think>#Newline<set name="familiarpredicate"><uppercase><get name="familiarpredicate"/></uppercase></set>#Newline</think>#Newline<condition name="familiarpredicate">#Newline<li value="UNKNOWN"/>#Newline<li>#NewlineI will remember your <lowercase><get name="familiarpredicate"/></lowercase>'s name is #Newline<set name="contactname">#Newline<condition name="familiarpredicate">#Newline<li value="SON"><set name="son"><get name="contactname"/></set></li>#Newline<li value="AUNT"><set name="aunt"><get name="contactname"/></set></li>#Newline<li value="WIFE"><set name="wife"><get name="contactname"/></set></li>#Newline<li value="NIECE"><set name="niece"><get name="contactname"/></set></li>#Newline<li value="UNCLE"><set name="uncle"><get name="contactname"/></set></li>#Newline<li value="NEPHEW"><set name="niece"><get name="contactname"/></set></li>#Newline<li value="MOTHER"><set name="mother"><get name="contactname"/></set></li>#Newline<li value="FATHER"><set name="father"><get name="contactname"/></set></li>#Newline<li value="SISTER"><set name="sister"><get name="contactname"/></set></li>#Newline<li value="BROTHER"><set name="brother"><get name="contactname"/></set></li>#Newline<li value="HUSBAND"><set name="husband"><get name="contactname"/></set></li>#Newline<li value="DAUGHTER"><set name="daughter"><get name="contactname"/></set></li>#Newline<li value="BOYFRIEND"><set name="boyfriend"><get name="contactname"/></set></li>#Newline<li value="GIRLFRIEND"><set name="girlfriend"><get name="contactname"/></set></li>#Newline<li value="GRANDMOTHER"><set name="grandmother"><get name="contactname"/></set></li>#Newline<li value="GRANDFATHER"><set name="grandfather"><get name="contactname"/></set></li>#Newline<li>who</li>#Newline</condition>#Newline</set>.#Newline</li>#Newline</condition>,familiar.aiml
+0,REMEMBERFAMILIARNAME,*,*,"<think>#Newline<set name=""familiarpredicate""><uppercase><get name=""familiarpredicate""/></uppercase></set>#Newline</think>#Newline<condition name=""familiarpredicate"">#Newline<li value=""UNKNOWN""/>#Newline<li>#NewlineI will remember your <lowercase><get name=""familiarpredicate""/></lowercase>'s name is #Newline<set name=""contactname"">#Newline<condition name=""familiarpredicate"">#Newline<li value=""SON""><set name=""son""><get name=""contactname""/></set></li>#Newline<li value=""AUNT""><set name=""aunt""><get name=""contactname""/></set></li>#Newline<li value=""WIFE""><set name=""wife""><get name=""contactname""/></set></li>#Newline<li value=""NIECE""><set name=""niece""><get name=""contactname""/></set></li>#Newline<li value=""UNCLE""><set name=""uncle""><get name=""contactname""/></set></li>#Newline<li value=""NEPHEW""><set name=""niece""><get name=""contactname""/></set></li>#Newline<li value=""MOTHER""><set name=""mother""><get name=""contactname""/></set></li>#Newline<li value=""FATHER""><set name=""father""><get name=""contactname""/></set></li>#Newline<li value=""SISTER""><set name=""sister""><get name=""contactname""/></set></li>#Newline<li value=""BROTHER""><set name=""brother""><get name=""contactname""/></set></li>#Newline<li value=""HUSBAND""><set name=""husband""><get name=""contactname""/></set></li>#Newline<li value=""DAUGHTER""><set name=""daughter""><get name=""contactname""/></set></li>#Newline<li value=""BOYFRIEND""><set name=""boyfriend""><get name=""contactname""/></set></li>#Newline<li value=""GIRLFRIEND""><set name=""girlfriend""><get name=""contactname""/></set></li>#Newline<li value=""GRANDMOTHER""><set name=""grandmother""><get name=""contactname""/></set></li>#Newline<li value=""GRANDFATHER""><set name=""grandfather""><get name=""contactname""/></set></li>#Newline<li>who</li>#Newline</condition>#Newline</set>.#Newline</li>#Newline</condition>",familiar.aiml

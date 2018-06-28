@@ -1,3 +1,4 @@
 E:\Eliza\maven-demo\src\main\java\Chatbot.java
-E:\Eliza\maven-demo\src\main\java\SpeakingChatbot.java
-E:\Eliza\maven-demo\src\main\java\sendmail.java
+E:\Eliza\maven-demo\src\main\java\deploy\SpeakingChatbot.java
+E:\Eliza\maven-demo\src\main\java\deploy\sendmail.java
+E:\Eliza\maven-demo\src\main\java\connectToDB.java

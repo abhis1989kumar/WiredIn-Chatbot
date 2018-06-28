@@ -1,8 +1,8 @@
-0,TEACH ME <SET>LANGUAGE</SET>,*,*,<srai>LANGUAGE</srai> Let's try a searching for "learn <star/>". <oob><search>LEARN <star/></search></oob>,oob.aiml
+0,TEACH ME <SET>LANGUAGE</SET>,*,*,"<srai>LANGUAGE</srai> Let's try a searching for ""learn <star/>"". <oob><search>LEARN <star/></search></oob>",oob.aiml
 0,CLEAR LOG,*,*,Done. <oob><clear>log</clear></oob>,oob.aiml
 0,*,WHAT WOULD YOU LIKE TO WRITE ON TWITTER,*,<srai>TWEET <star/></srai>,oob.aiml
 0,SEND MAIL,*,*,<srai>SEND EMAIL</srai>,oob.aiml
-0,SEND FEATURE REQUEST *,*,*,<think><set name="featurerequest"><star/></set></think> Click send to mail your feature request.  #Newline<oob><email><to>callmom-info@pandorabots.com</to><subject>Feature request <get name="featurerequest"/></subject><body>Dear CallMom developers#Comma I'd like to request that you add this feature to the next version of CallMom: <get name="featurerequest"/>.  Sincerely#Comma <get name="name"/></body></email></oob>,oob.aiml
+0,SEND FEATURE REQUEST *,*,*,"<think><set name=""featurerequest""><star/></set></think> Click send to mail your feature request.  #Newline<oob><email><to>callmom-info@pandorabots.com</to><subject>Feature request <get name=""featurerequest""/></subject><body>Dear CallMom developers#Comma I'd like to request that you add this feature to the next version of CallMom: <get name=""featurerequest""/>.  Sincerely#Comma <get name=""name""/></body></email></oob>",oob.aiml
 0,SHOW ME A VIDEO *,*,*,I'm looking up videos for you.  <oob><search>VIDEO <star/></search></oob>,oob.aiml
 0,SHOW ME A WEBSITE ABOUT *,*,*,Let's try a google search.  <oob><search><star/></search></oob>,oob.aiml
 0,I WANT TO BUY *,*,*,Let's try to find a store on the map.  <oob><map><star/></map></oob>,oob.aiml
@@ -20,12 +20,12 @@
 0,FIND THE NEAREST STARBUCKS,*,*,I'm looking on the map.  <oob><map>Starbucks</map></oob>,oob.aiml
 0,FIND THE NEAREST *,*,*,I'm showing you <star/> on the map.  <oob><map><star/></map></oob>,oob.aiml
 0,FIND NEAREST *,*,*,I've found several near you.  <oob><map><star/></map></oob>,oob.aiml
-0,YES,WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *,*,<srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai>,oob.aiml
+0,YES,WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *,*,"<srai>SEND FEATURE REQUEST <get name=""featurerequest""/></srai>",oob.aiml
 0,DIRECTIONS TO *,*,*,Here are the driving directions.  <oob><directions><to><star/></to></directions></oob>,oob.aiml
 0,DIRECTIONS *,*,*,Here are the directions.  <oob><directions><to><star/></to></directions></oob>,oob.aiml
-0,DIRECTIONS FROM * TO *,*,*,Here are the directions from <star/> to <star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob>,oob.aiml
+0,DIRECTIONS FROM * TO *,*,*,"Here are the directions from <star/> to <star index=""2""/>.  <oob><directions><from><star/></from><to><star index=""2""/></to></directions></oob>",oob.aiml
 0,LAUNCH CAMERA,*,*,Launching the camera.  <oob><camera>on</camera></oob>,oob.aiml
-0,LAUNCH *,*,*,I didn't find <star/> among your installed apps.  Let's try to find it. <think><set name="it"><star/></set></think>.  <oob><search><star/></search></oob>,oob.aiml
+0,LAUNCH *,*,*,"I didn't find <star/> among your installed apps.  Let's try to find it. <think><set name=""it""><star/></set></think>.  <oob><search><star/></search></oob>",oob.aiml
 0,LAUNCH * DOT COM,*,*,Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob>,oob.aiml
 0,TACO,*,*,I'm looking for Mexican restaurants near you.  <oob><map>Tacos</map></oob>,oob.aiml
 0,PIZZA,*,*,I'm looking on the map for Pizza places near you.  <oob><map>Pizza</map></oob>,oob.aiml
@@ -45,7 +45,7 @@
 0,WHERE IS INDIA,*,*,I'll show you on the map.  <oob><map>India</map></oob>,oob.aiml
 0,WHERE CAN I FIND A *,*,*,I'm looking on the map.  <oob><map><star/></map></oob>,oob.aiml
 0,WHERE CAN I GET *,*,*,I'm looking on the map for places near you.  <oob><map><star/></map></oob>,oob.aiml
-0,WHERE CAN I GO *,*,*,I'm looking for "<star/>" on the map. <oob><map><star/></map></oob>,oob.aiml
+0,WHERE CAN I GO *,*,*,"I'm looking for ""<star/>"" on the map. <oob><map><star/></map></oob>",oob.aiml
 0,DIALOG TEST,*,*,Testing dialog.  <oob><dialog><list><li>Yes</li><li>No</li></list></dialog></oob>,oob.aiml
 0,ESPN,*,*,Opening ESPN.  <oob><url>http://espn.go.com</url></oob>,oob.aiml
 0,MAP,*,*,Opening your map.  <oob><map/></oob>,oob.aiml

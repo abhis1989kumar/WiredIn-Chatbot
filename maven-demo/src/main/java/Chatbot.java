@@ -9,9 +9,8 @@ public class Chatbot {
 	private static final boolean TRACE_MODE = false;
 	static String botName = "super";
 	
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	try {
-		
 		File currDir = new File(".");
 		String path = currDir.getAbsolutePath();
 		path = path.substring(0, path.length() - 2);
@@ -49,7 +48,7 @@ public static void main(String[] args) {
                 		   response = response.replace("&gt;", ">");
                 	   System.out.println("Robot : " + response);}}
 	}
-	catch (Exception e) {e.printStackTrace();}}
+	catch (Exception e) {e.printStackTrace();}}*/
 	
 /*private static String getResourcesPath() {
 		File currDir = new File(".");

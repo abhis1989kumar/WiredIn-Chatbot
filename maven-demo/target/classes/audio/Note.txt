@@ -1,0 +1,4 @@
+Save to Desktop
+Open HalbertAI.java
+Replace the path replace halbert with ur computer name.
+Compile Java File and then Execute.

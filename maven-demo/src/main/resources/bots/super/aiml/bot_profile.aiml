@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: bot_profile.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: February 20, 2013 -->
-<!--  -->
-<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
-<!--  -->
-<!-- The SUPER brain is Copyright &copy; 2013 by ALICE AI Foundation. -->
-<!--  -->
-<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.alicebot.org -->
+
 <category><pattern>YOUR <SET>PROFILE</SET></pattern>
 <template><srai><star/></srai></template>
 </category>
@@ -25,7 +11,7 @@
 <template>I look like a <srai>DEVICE MANUFACTURER</srai> <srai>DEVICE MODEL</srai>.</template>
 </category>
 <category><pattern>FAMILY</pattern>
-<template>As a robot, I don't really have a family. I have a bot master and some clones.</template>
+<template>As a chatbot,Cyr3con members are my family.And you too are part of my family now.</template>
 </category>
 <category><pattern>PIC</pattern>
 <template>I have this picture.
